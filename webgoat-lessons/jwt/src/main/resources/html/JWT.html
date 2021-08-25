@@ -346,7 +346,7 @@ string_chop =  function(str, size){
     }
     return strResult;
 }
-
+document.getElementById("encodedSignature").innerHTML=obj.encodedSignature;
 $('#encode').submit(function () {
     $.post('/WebGoat/JWT/encode', $('#encode').serialize(), function (data, textStatus) {
     	var obj = JSON.parse(data);
